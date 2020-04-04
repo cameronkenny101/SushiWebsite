@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.image {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 350px;
+    left: 0;
+}
+.holdPage{
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.topBar{
+    line-height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: beige;
+}
+
+#logo{
+    position: absolute;
+    float: left;
+    font-size: 50px;
+    margin-left: 30px;
+}
+
+ul.nav {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+ul.nav li {
+    float: left;
+    position: relative;
+}
+  
+ul.nav li a {
+    font-size: 16px;
+}
+  
+ul.nav li:hover a {
+    color: red;
+    font-size: 20px;
+    transition: all 0.25s ease-in-out 0s;
+}
+  
+ul.nav li a {
+    padding: 20px;
+    color: initial;
+    text-decoration: initial;
+}
+
+.section .slider {
+    background: white;
+}
+
+.slidercontent {
+    text-align: center;
+}
+
+.hero {
+    color: black;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+h1.hero {
+    font-size: 60px;
+}
+
+h2.hero {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.call {
+    color: black;
+    display: block;
+}
+
+.call span {
+    display: inline;
+    border: 2px solid black;
+    padding: 8px 13px;
+    font-size: 25px;
+    
+}
+
+.call span:hover {
+    background: white;
+    cursor: pointer;
+}
+.call span a{
+    color: initial;
+    text-decoration: initial;
+    transition: all 0.25s ease-out 0s;
+}
+.call span:hover a{
+    font-size: 35px;
+    transition: all 0.25s ease-in-out 0s;
+    padding: 48px 55px;
+    margin-bottom: 10px;
+}
+
+.margainBottom{
+    margin-bottom: 60px;
+}
+
+.contactHeader{
+    margin-top: 100px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+.form{
+    text-align: center;
+}
+.form-control{
+    width: 70%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    color: brown;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+.form input{
+    height: 50px;
+}
+.submit{
+    background: orangered;
+    border-color: transparent;
+    font-size: 20px;
+    color: white;
+    height: 100px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    width: 35%;
+    transition: all 0.25s ease-out 0s;
+}
+.submit:hover{
+    transition: all 0.25s ease-in-out 0s;
+    font-size: 35px;
+    width: 50%;
+    height: 70px;
+    cursor: pointer;
+}
+.form textarea{
+    height: 250px;
+}
+
