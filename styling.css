@@ -53,10 +53,10 @@ ul.nav li a {
 ul.nav li:hover a {
     color: red;
     font-size: 20px;
-    transition: all 0.25s ease-in-out 0s;
 }
   
 ul.nav li a {
+    transition: all 0.25s ease-in-out 0s;
     padding: 20px;
     color: initial;
     text-decoration: initial;
