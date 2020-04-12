@@ -5,6 +5,7 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
 .image {
     max-width: 100%;
     height: auto;
@@ -12,6 +13,7 @@ body {
     top: 350px;
     left: 0;
 }
+
 .holdPage{
     height: 40px;
     font-family: 'Montserrat', sans-serif;
@@ -102,11 +104,13 @@ h2.hero {
     background: white;
     cursor: pointer;
 }
+
 .call span a{
     color: initial;
     text-decoration: initial;
     transition: all 0.25s ease-out 0s;
 }
+
 .call span:hover a{
     font-size: 35px;
     transition: all 0.25s ease-in-out 0s;
@@ -124,9 +128,11 @@ h2.hero {
     color: black;
     font-size: 20px;
 }
+
 .form{
     text-align: center;
 }
+
 .form-control{
     width: 70%;
     background: transparent;
@@ -137,9 +143,11 @@ h2.hero {
     font-size: 18px;
     margin-bottom: 14px;
 }
+
 .form input{
     height: 50px;
 }
+
 .submit{
     background: orangered;
     border-color: transparent;
@@ -152,6 +160,7 @@ h2.hero {
     width: 35%;
     transition: all 0.25s ease-out 0s;
 }
+
 .submit:hover{
     transition: all 0.25s ease-in-out 0s;
     font-size: 35px;
@@ -159,7 +168,182 @@ h2.hero {
     height: 70px;
     cursor: pointer;
 }
+
 .form textarea{
     height: 250px;
 }
 
+.recipeImage {
+    display: block;
+    width: 50%;
+	max-width: 50%;
+    margin-left: 25%;
+    margin-right: 50%;
+    
+}
+
+.viewRecipie1 {
+	margin: auto;
+	width: 70%;
+	max-width: 496px;
+}
+
+.viewRecipie2 {
+	margin: auto;
+	width: 70%;
+	max-width: 496px;
+}
+
+.viewRecipie3 {
+	margin: auto;
+	width: 70%;
+	max-width: 496px;
+}
+
+.display {
+    text-align: center;
+	padding: 0;
+}
+
+.display li {
+   
+		display: inline-block;
+		margin-left: 15px;
+}
+
+.title {
+    text-align: center;
+	margin: 0;
+	font-weight: 300;
+	color: #222222;
+	font-size: 30px;
+}
+
+.title2 {
+    text-align: center;
+	margin: 0;
+	font-weight: 300;
+	color: #838689;
+	font-size: 25px;
+}
+
+.nicetext {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 400;
+	color: #222222;
+}
+
+.whitespace{
+	margin-bottom: 100px;
+}
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 25px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display:block;
+}
+
+.squad {
+      overflow: hidden;
+      text-align: center;
+      background: white;
+      padding: 10px;
+}
+
+.squad h1 {
+    color: black;
+    font-size: 100px;
+}
+
+.borders {
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: blueviolet;
+    margin-bottom: 80px;
+}
+
+.pictures {
+    margin-bottom: 40px;
+}
+
+.pictures a {
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.pictures a img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+}
+
+.pictures a:hover > img {
+    filter: none;
+}
+
+.section {
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+}
+.section:target {
+    transition: all 0.25s ease-in-out 0s;
+    height: auto;
+}
+
+.name {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styling.css">
+        <title>Dublin Sushi</title>
+    </head>
+    <body>
+        <header class="holdPage">
+            <div class="topBar">
+                <div id="logo"><b>DUBLIN SUSHI</b></div>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipies</a></li>
+                    <li><a href="aboutUs.html">The Team</a></li>
+                    <li><a href="contact.html">Conatct Us</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class = "whitespace"></div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Recipes</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#PhiladelphiaSushi">Philadelphia Sushi</a>
+              <a href="#SalmonSushi">Salmon Sushi</a>
+              <a href="#SalamaderSushi">Salamander Sushi</a>
+            </div>
+          </div>
+          <script>
+              function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+}
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+        <div class = "whitespace"></div>
+        <article id = "PhiladelphiaSushi">
+        <div class="viewRecipe1">
+            <img class="recipeImage" src="https://live.staticflickr.com/65535/48410864707_fd224ec0e7_b.jpg" alt="Philadelphia Sushi"/>
+                <br>
+                <h2 class = "title">Philadelphia Sushi</h2>
+                <h3 class = "title2">Gourmet Food</h3>
+            <ul class = "display">
+                <li>Meal for 1</li>
+                <li>30 min</li>
+                <li>Advanced level</li>
+                <li>543 calories</li>
+            </ul>
+            <p class="nicetext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus voluptates eius error ut dolore quidem in ipsam? Velit earum architecto exercitationem 
+                dolorem. Quae beatae ut est fugit, inventore vitae atque ex sapiente vero laudantium! Ut similique nam quam, dolore mollitia ipsam ratione nemo minus tempora reiciendis modi, 
+                explicabo vero maxime facere eligendi? Atque rem architecto nam, explicabo dolore nesciunt repellendus.</p>
+
+            <p class="nicetext">Ingredients: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, culpa veniam, necessitatibus adipisci debitis nihil a vero non, tempora voluptatibus.</p>
+            <p class="nicetext"><a href="https://youtu.be/r-6wimVNoJw?t=23">CLICK HERE TO WATCH HOW TO PREPARE</a></p>
+        </div>
+            </article>
+            <div class = "whitespace"></div>
+        <div class = "whitespace"></div>
+        <article id="SalmonSushi">
+        <div class="viewRecipe2">
+            <img class="recipeImage" src="https://p0.pikrepo.com/preview/91/510/time-sushi.jpg" alt="Salmon Sushi"/>
+                <br>
+                <h2 class = "title">Salmon Sushi</h2>
+                <h3 class = "title2">Brunch Food</h3>
+            <ul class = "display">
+                <li>Meal for 1</li>
+                <li>10 min</li>
+                <li>Beginner level</li>
+                <li>343 calories</li>
+            </ul>
+            <p class="nicetext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus voluptates eius error ut dolore quidem in ipsam? Velit earum architecto exercitationem 
+                dolorem. Quae beatae ut est fugit, inventore vitae atque ex sapiente vero laudantium! Ut similique nam quam, dolore mollitia ipsam ratione nemo minus tempora reiciendis modi, 
+                explicabo vero maxime facere eligendi? Atque rem architecto nam, explicabo dolore nesciunt repellendus.</p>
+
+            <p class="nicetext">Ingredients: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, culpa veniam, necessitatibus adipisci debitis nihil a vero non, tempora voluptatibus.</p>
+            <p class="nicetext"><a href="https://youtu.be/oHg5SJYRHA0?t=44">CLICK HERE TO WATCH HOW TO PREPARE</a></p>
+        </div>
+            </article>
+            <div class = "whitespace"></div>
+        <div class = "whitespace"></div>
+        <article id="SalamaderSushi">
+        <div class="viewRecipe3">
+            <img class="recipeImage" src="https://i1.pickpik.com/photos/880/303/830/asian-chopsticks-close-up-cuisine-thumb.jpg" alt="Salamander Sushi"/>
+                <br>
+                <h2 class = "title">Salamander Sushi</h2>
+                <h3 class = "title2">Dinner Food</h3>
+            <ul class = "display">
+                <li>Meal for 2</li>
+                <li>1 hour 30 min</li>
+                <li>Expert level</li>
+                <li>943 calories</li>
+            </ul>
+            <p class="nicetext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus voluptates eius error ut dolore quidem in ipsam? Velit earum architecto exercitationem 
+                dolorem. Quae beatae ut est fugit, inventore vitae atque ex sapiente vero laudantium! Ut similique nam quam, dolore mollitia ipsam ratione nemo minus tempora reiciendis modi, 
+                explicabo vero maxime facere eligendi? Atque rem architecto nam, explicabo dolore nesciunt repellendus.</p>
+
+            <p class="nicetext">Ingredients: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, culpa veniam, necessitatibus adipisci debitis nihil a vero non, tempora voluptatibus.</p>
+            <p class="nicetext"><a href="https://youtu.be/oHg5SJYRHA0?t=44">CLICK HERE TO WATCH HOW TO PREPARE</a></p>
+        </div>
+            </article>
+            <div class = "whitespace"></div>
+        </body>
+        </html>
+
+    
