@@ -1,22 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans&display=swap');
 
+/* Set html pages to full pages for parralex effect */
+html {
+    height: 100%;
+}
+
+/* All the text in this webpage is of default font and Montserrat font */
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-.image {
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    top: 350px;
-    left: 0;
+
+/* Parralex effect primarly found on index page*/
+.parralex {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+
+.imageOne {
+    background-image: url(image1.jpg);
+}
+
+.imageTwo {
+    background-image: url(image2.jpg);
+}
+
+.imageThree {
+    background-image: url(image3.jpg);
+}
+
+.imageFour {
+    height: auto;
+    background-image: url(image4.jpg);
+}
+
+.imageFive {
+    background-image: url(image5.jpg);
+}
+
+/* Image Six was not working with parralex effect but needed an effect so centred image and covered full page */
+.imageSix {
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(image6.jpg);
+}
+/* Sets te height of nav bar */
 .holdPage{
     height: 40px;
     font-family: 'Montserrat', sans-serif;
 }
-
+/* Sets the nav bar with a color and fixes it so when you scroll its always present */
 .topBar{
     line-height: 80px;
     width: 100%;
@@ -26,14 +66,41 @@ body {
     z-index: 100;
     background: beige;
 }
-
-#logo{
+/* Drags the logo to the left of the nav bar and makes it bigger than the links to pages on the right side of the nav bar */
+.logo{
     position: absolute;
     float: left;
+    font-weight: bolder;
     font-size: 50px;
     margin-left: 30px;
 }
 
+
+.logo a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Turns logo red when you hover over it slowly with transition effect */
+.logo a:hover {
+    transition: all 0.25s ease-in-out 0s;
+    color: red;
+}
+
+/* When screen is small the size of the logo is reduced */
+@media(max-width: 900px) {
+    .logo{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 600px) {
+    .logo {
+        font-size: 12px;
+    }
+}
+
+/* Links on the right side of the nav bar, block of code sets color, font size and animation with transition effect */
 ul.nav {
     float: right;
     list-style: none;
@@ -49,7 +116,7 @@ ul.nav li {
 ul.nav li a {
     font-size: 16px;
 }
-  
+
 ul.nav li:hover a {
     color: red;
     font-size: 20px;
@@ -62,17 +129,37 @@ ul.nav li a {
     text-decoration: initial;
 }
 
-.section .slider {
-    background: white;
+/* When screen size is smaller font size is reduced */
+@media(max-width: 900px) {
+    ul.nav li a {
+        font-size: 14px;
+    }
+    ul.nav li:hover a {
+        color: red;
+        font-size: 16px;
+    }
+    
 }
 
+@media(max-width: 600px) {
+    ul.nav li a {
+        font-size: 10px;
+    }
+    ul.nav li:hover a {
+        color: red;
+        font-size: 12px;
+    }
+}
+
+
+/* Code for the slide box which points to menu over the parralexed image */
 .slidercontent {
     text-align: center;
 }
 
 .hero {
     color: black;
-    font-weight: normal;
+    font-weight: bolder;
     letter-spacing: 2px;
 }
 
@@ -85,6 +172,15 @@ h2.hero {
     margin-bottom: 30px;
 }
 
+.box {
+    padding: 2%;
+    background: beige;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+/* Box which links to menu on home page */
 .call {
     color: black;
     display: block;
@@ -93,65 +189,199 @@ h2.hero {
 .call span {
     display: inline;
     border: 2px solid black;
-    padding: 8px 13px;
+    padding: 14px 250px;
     font-size: 25px;
-    
+    background: beige;
 }
 
+/* Makes box bigger when you hover over it and change color with nice transition effect */
 .call span:hover {
-    background: white;
     cursor: pointer;
+    border: 2px solid beige;
+    background: black;
 }
+
 .call span a{
-    color: initial;
+    color: black;
     text-decoration: initial;
     transition: all 0.25s ease-out 0s;
 }
+
 .call span:hover a{
+    color: beige;
     font-size: 35px;
+    font-weight: bolder;
     transition: all 0.25s ease-in-out 0s;
-    padding: 48px 55px;
     margin-bottom: 10px;
+}
+
+/* When screen is smaller we make the box much smaller to fit screen */
+@media(max-width: 900px) {
+    .call span {
+        font-size: 20px;
+        padding: 14px 100px;
+    }
+    .call span:hover a{
+        font-size: 30px;
+    }
+
+}
+
+/* Footer is set to fill full screen */
+footer {
+    width: 100%;
+    display: block;
+    height: 100px;
+    background-color: beige;
+}
+
+/* Text for company takes up 35% of the page */
+.company {
+    width: 35%;
+    float: left;
+}
+
+.text {
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 60px;
+    
+}
+
+@media(max-width: 900px) {
+    .text {
+        font-size: 14px;
+    }
+    
+}
+
+/* Links to social media takes up 65% of the page */
+.socials {
+    width: 65%;
+    float: right;
+    float: left;
+    line-height: 100px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.socials a {
+    float: left;
+    line-height: 100px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    background: black;
+    transition: all 0.25s ease-in-out 0s;
+}
+
+@media(max-width: 600px) {
+    .text {
+        font-size: 10px;
+    }
+    
+}
+
+.findUs {
+    background-color: turquoise;
+    font-size: 24px;
+    width: 40%;
+}
+
+
+.facebook {
+    background-color: darkblue;
+    width: 20%;
+    font-size: 28px;
+}
+
+
+
+.twitter {
+    background-color: skyblue;
+    width: 20%;
+    font-size: 28px;
+}
+
+.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    width: 20%;
+    font-size: 18px;
+}
+
+/* If screen is very small resize each of the links to be equal size */
+@media(max-width: 600px) {
+    .findUs{
+        font-size: 12px;
+        width: 25%;
+    }
+
+    .facebook {
+        width: 25%;
+    }
+
+    .twitter {
+        width: 25%;
+    }
+    .instagram {
+        font-size: 12px;
+        width: 25%;
+    }
+
 }
 
 .margainBottom{
     margin-bottom: 60px;
 }
 
+/* Text for the top of the contact html page */
 .contactHeader{
     margin-top: 100px;
     text-align: center;
     color: black;
     font-size: 20px;
 }
+
 .form{
     text-align: center;
 }
+
+/* Sets the size of the box, sets color and border */
 .form-control{
+    text-align: center;
     width: 70%;
-    background: transparent;
-    border: none;
+    background: beige;
+    border: 2px solid black;
     outline: none;
-    border-bottom: 1px solid grey;
-    color: brown;
+    color: black;
     font-size: 18px;
     margin-bottom: 14px;
 }
+
 .form input{
     height: 50px;
 }
+
+/* Sets the size of the submit button, its color and the color and size of text within it */
 .submit{
     background: orangered;
     border-color: transparent;
     font-size: 20px;
     color: white;
-    height: 100px;
     font-weight: bolder;
     letter-spacing: 3px;
     margin-top: 20px;
     width: 35%;
     transition: all 0.25s ease-out 0s;
 }
+
+/* Expands box when hovered over */
 .submit:hover{
     transition: all 0.25s ease-in-out 0s;
     font-size: 35px;
@@ -159,7 +389,327 @@ h2.hero {
     height: 70px;
     cursor: pointer;
 }
+
+/* Size of main text area for message */
 .form textarea{
-    height: 250px;
+    height: 225px;
 }
 
+@media(max-width: 1200px) {
+    .form input{
+        height: 40px;
+    }
+    .submit {
+        font-size: 15px;
+    }
+    .submit:hover{
+        font-size: 20px;
+        height: 50px;
+    }
+    .form textarea {
+        height: 200px;
+    }
+}
+
+/* Size of images for recipies page */
+.recipeImage {
+    display: block;
+    width: 30%;
+	max-width: 50%;
+    margin-left: 35%;
+    
+}
+
+.viewRecipie1 {
+	margin: auto;
+	width: 70%;
+	max-width: 496px;
+}
+
+.viewRecipie2 {
+	margin: auto;
+	width: 70%;
+	max-width: 496px;
+}
+
+.viewRecipie3 {
+	margin: auto;
+	width: 70%;
+	max-width: 496px;
+}
+
+/* Centers list and keeps it items all on the one line */
+.display {
+    text-align: center;
+	padding: 0;
+}
+
+.display li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+/* Stes color and font size of the text in Recipies page */
+.title {
+    text-align: center;
+	margin: 0;
+	font-weight: 300;
+	color: #222222;
+	font-size: 30px;
+}
+
+.title2 {
+    text-align: center;
+	margin: 0;
+	font-weight: 300;
+	color: #838689;
+	font-size: 25px;
+}
+
+.nicetext {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 400;
+	color: #222222;
+}
+
+
+.whitespace{
+	margin-bottom: 100px;
+}
+
+/* Button that contains javascript in recipies page */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 25px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+  
+/* Positions the dropdown button */
+.dropdown {
+    position: relative;
+    display: block;
+}
+  
+/* Dropdown text is not seen initally */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gainsboro;
+    min-width: 160px;
+  }
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+/* Change color of dropdown links when you*/
+.dropdown-content a:hover {
+    background-color: wheat
+}
+  
+/* Show the dropdown menu */
+.show {
+    display:block;
+}
+
+/* Text above google map on find us page */
+.map {
+    font-size: 35px;
+    overflow: hidden;
+    text-align: center;
+    padding: 100px;
+}
+
+/* Text above The Team page */
+.squad {
+      overflow: hidden;
+      text-align: center;
+      background: white;
+      padding: 10px;
+}
+
+.squad h1 {
+    color: black;
+    font-size: 100px;
+}
+
+.borders {
+    display: block;
+    margin: auto;
+    width: 40%;
+    height: 5px;
+    background: black;
+    margin-bottom: 80px;
+}
+
+.pictures {
+    margin-bottom: 40px;
+}
+
+/* Displays the images as a circle with the border radius effect */
+.pictures a {
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+/* Puts gray on image */
+.pictures a img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+}
+
+/* Removes gray when hovering */
+.pictures a:hover > img {
+    filter: none;
+}
+
+/* Hides each section of text ud=nder the employee photos as each photo links to text */
+.section {
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+}
+
+/* Then when an image is clicked the height is set to auto so text under photo can be seen */
+.section:target {
+    transition: all 0.25s ease-in-out 0s;
+    height: auto;
+}
+
+/* Same trick is applied to the menu */
+.menuSushi {
+    height: 0;
+    overflow: hidden;
+}
+
+.menuSushi:target {
+    transition: all 0.25s ease-in-out 0s;
+    height: auto;
+    background: beige;
+}
+
+.name {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Makes main headers of menu centred and responive */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: beige;
+}
+
+.menuLinks {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.menuLinks li {
+    list-style: none;
+}
+
+.menuLinks a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.menuLinks a:hover {
+    color: red;
+}
+
+/* Makes item on menu appear as two columnsand makes items on menu responsive */
+.order {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.order p {
+    margin: 4px;
+}
+
+.order li {
+    display: flex;
+    align-items: stretch;
+    width: 45%;
+    padding: 10px;
+}
+
+.food {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Three main menu links fonts are reduced when screen is extremely small */
+@media(max-width: 700px) {
+    .menuLinks a{
+        font-size: 12px;
+    }
+    .food {
+        font-size: 12px;
+    }
+}
+
+.space {
+    border-bottom: 1px dotted black;
+    margin-bottom: 10px;
+    flex: 1 1 50%;
+}
+
+.price {
+    font-size: 18px;
+}
+
+/* Initial size of iframe */
+iframe {
+    height: 600px;
+    width: 1200px;
+    border:2px #000000 solid;
+}
+
+/* At different screen sizes the google maps iframe is adjuste */
+@media(max-width: 1400px) {
+    iframe {
+        width: 600px;
+    }
+}
+
+@media(max-width: 900px) {
+    iframe {
+        width: 400px;
+    }
+}
+
+@media(max-width: 700px) {
+    iframe {
+        height: 300px;
+        width: 300px;
+    }
+}
