@@ -13,6 +13,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+<<<<<<< HEAD
 /* Parralex effect primarly found on index page*/
 .parralex {
     height: 100%;
@@ -35,6 +36,10 @@ body {
 }
 
 .imageFour {
+=======
+.image {
+    max-width: 100%;
+>>>>>>> b4b0782e0e0e9e4a1d3dff7785a1cdaaeb1594ea
     height: auto;
     background-image: url(image4.jpg);
 }
@@ -43,6 +48,7 @@ body {
     background-image: url(image5.jpg);
 }
 
+<<<<<<< HEAD
 /* Image Six was not working with parralex effect but needed an effect so centred image and covered full page */
 .imageSix {
     height: auto;
@@ -52,6 +58,8 @@ body {
     background-image: url(image6.jpg);
 }
 /* Sets te height of nav bar */
+=======
+>>>>>>> b4b0782e0e0e9e4a1d3dff7785a1cdaaeb1594ea
 .holdPage{
     height: 40px;
     font-family: 'Montserrat', sans-serif;
@@ -352,7 +360,10 @@ footer {
     text-align: center;
 }
 
+<<<<<<< HEAD
 /* Sets the size of the box, sets color and border */
+=======
+>>>>>>> b4b0782e0e0e9e4a1d3dff7785a1cdaaeb1594ea
 .form-control{
     text-align: center;
     width: 70%;
@@ -368,7 +379,10 @@ footer {
     height: 50px;
 }
 
+<<<<<<< HEAD
 /* Sets the size of the submit button, its color and the color and size of text within it */
+=======
+>>>>>>> b4b0782e0e0e9e4a1d3dff7785a1cdaaeb1594ea
 .submit{
     background: orangered;
     border-color: transparent;
@@ -381,7 +395,10 @@ footer {
     transition: all 0.25s ease-out 0s;
 }
 
+<<<<<<< HEAD
 /* Expands box when hovered over */
+=======
+>>>>>>> b4b0782e0e0e9e4a1d3dff7785a1cdaaeb1594ea
 .submit:hover{
     transition: all 0.25s ease-in-out 0s;
     font-size: 35px;
@@ -390,7 +407,10 @@ footer {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 /* Size of main text area for message */
+=======
+>>>>>>> b4b0782e0e0e9e4a1d3dff7785a1cdaaeb1594ea
 .form textarea{
     height: 225px;
 }
@@ -630,6 +650,7 @@ footer {
     list-style: none;
 }
 
+<<<<<<< HEAD
 .menuLinks a {
     color: black;
     text-decoration: none;
@@ -712,4 +733,179 @@ iframe {
         height: 300px;
         width: 300px;
     }
+=======
+.recipeImage {
+    display: block;
+    width: 50%;
+	max-width: 50%;
+    margin-left: 25%;
+    margin-right: 50%;
+    
+}
+
+.viewRecipie1 {
+	margin: auto;
+	width: 70%;
+	max-width: 496px;
+}
+
+.viewRecipie2 {
+	margin: auto;
+	width: 70%;
+	max-width: 496px;
+}
+
+.viewRecipie3 {
+	margin: auto;
+	width: 70%;
+	max-width: 496px;
+}
+
+.display {
+    text-align: center;
+	padding: 0;
+}
+
+.display li {
+   
+		display: inline-block;
+		margin-left: 15px;
+}
+
+.title {
+    text-align: center;
+	margin: 0;
+	font-weight: 300;
+	color: #222222;
+	font-size: 30px;
+}
+
+.title2 {
+    text-align: center;
+	margin: 0;
+	font-weight: 300;
+	color: #838689;
+	font-size: 25px;
+}
+
+.nicetext {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 400;
+	color: #222222;
+}
+
+.whitespace{
+	margin-bottom: 100px;
+}
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 25px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display:block;
+}
+
+.squad {
+      overflow: hidden;
+      text-align: center;
+      background: white;
+      padding: 10px;
+}
+
+.squad h1 {
+    color: black;
+    font-size: 100px;
+}
+
+.borders {
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: blueviolet;
+    margin-bottom: 80px;
+}
+
+.pictures {
+    margin-bottom: 40px;
+}
+
+.pictures a {
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.pictures a img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+}
+
+.pictures a:hover > img {
+    filter: none;
+}
+
+.section {
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+}
+.section:target {
+    transition: all 0.25s ease-in-out 0s;
+    height: auto;
+}
+
+.name {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+>>>>>>> b4b0782e0e0e9e4a1d3dff7785a1cdaaeb1594ea
 }
